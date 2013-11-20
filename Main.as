@@ -99,17 +99,17 @@ package
 			text.text = "Om du är för lat för att räkna så har du nu klickat på " + String(points) + " Cirklar!" + "\n" + "Idiot..";
 			text.wordWrap = true;
 			
-			if (points >= 5) 
+			if (points <= 5) 
 			{
-				result.text = "Your score is " + String(points) + " \n" + "Great job!";
+				result.text = "Your score is " + String(points) + "\n" + "Dude you suck!";
 			}
-			else if (points >= 13) 
+			else if (points <= 13) 
 			{
 				result.text = "Your score is " + String(points) + "\n" + "You can do better!" + "\n" + "Keep on going!";
 			}
-			else if (points >= 17) 
+			else if (points <= 17) 
 			{
-				result.text = "Your score is " + String(points) + "\n" + "Dude you suck!";
+				result.text = "Your score is " + String(points) + "\n" + "Great job!";
 			}
 		}
 		
